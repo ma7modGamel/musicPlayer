@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    tools:context=".TwoActivity">
+
+    <TextView
+        android:id="@+id/name_song_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="Name"
+        android:textColor="@color/primaryText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/artist_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Artist"
+        android:textColor="@color/secondaryText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="176dp"
+        android:layout_height="157dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/music"
+        app:civ_border_color="#00000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artist_two"
+        tools:ignore="MissingConstraints" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/pausebtnid"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btnbpase" />
+
+        <ImageButton
+            android:id="@+id/playbtnid"
+            android:layout_width="112dp"
+            android:layout_height="111dp"
+            android:layout_margin="16dp"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/play" />
+
+        <ImageButton
+            android:id="@+id/stopbtnId"
+            android:layout_width="39dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/buttonstop" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvstart"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginTop="308dp"
+        android:text=""
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="524dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/addshadow"
+        android:text="Back"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
